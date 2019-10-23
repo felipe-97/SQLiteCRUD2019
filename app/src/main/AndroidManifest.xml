@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.crud">
+    package="com.example.sqlite">
 
     <application
         android:allowBackup="true"
@@ -9,28 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Update"></activity>
-        <activity android:name=".Register"></activity>
-        <activity android:name=".ListUsers"></activity>
-        <activity android:name=".Login">
+        <activity android:name=".Singup"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity android:name=".Login"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUp"></activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+    <activity android:name=".MainActivity"
+        android:theme="@style/Theme.Design.Light.NoActionBar"/>
     </application>
 
 </manifest>
